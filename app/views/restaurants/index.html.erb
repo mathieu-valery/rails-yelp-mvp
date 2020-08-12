@@ -1,0 +1,10 @@
+<h1 class='text-center'>🍽 Welcome to Restaurants app 🍽</h1>
+<hr>
+<div class='container'>
+<% @restaurants.each do |restaurant| %>
+  <h2><%= link_to restaurant.name, restaurant_path(restaurant) %></h2>
+  <h3><%= restaurant.category %></h3>
+  <p><%= restaurant.address %></p>
+  <% end %>
+</div>
+
